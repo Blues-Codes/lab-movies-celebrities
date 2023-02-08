@@ -11,4 +11,4 @@ const celebritySchema = new Schema(
   }
 );
 
-module.exports = model('celebrities', celebritySchema);
+module.exports = model('Celebrities', celebritySchema);

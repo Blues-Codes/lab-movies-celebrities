@@ -22,13 +22,13 @@ router.post('/create', (req, res, next)=>{
   })
   .catch((err)=>{
     console.log(err)
-    res.render('celebrities/new-celebrity.hbs')
+    res.render('celebrity/new-celebrity.hbs')
   })
 })
 router.get('/', (req, res, next) => {
     Celebrity.find()
     .then((celebsfound) =>{
-        res.render('celebrities/celebrities.hbs', {celebsfound})
+        res.render('celebrity/celebrities.hbs', {celebsfound})
     })
     .catch((err) =>{
         console.log(err)
